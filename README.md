@@ -2,16 +2,16 @@
 ## Query and Result Formatter for Jira
 Formats your query/queries and result set(s) for nicer display in JIRA (wraps queries with "{code:sql}" tag and uses pipes to format result set headers and values.) 
 ### example
-`{code:sql}
-SELECT id, username
-FROM User
-WHERE   enabled = 0
-LIMIT 2;
-
-||id||username||
-|2|someDisabledUser|
-|5|someOtherDisabledUser|
-{code}`
+    {code:sql}
+    SELECT id, username
+    FROM User
+    WHERE   enabled = 0
+    LIMIT 2;
+    
+    ||id||username||
+    |2|someDisabledUser|
+    |5|someOtherDisabledUser|
+    {code}
 
 ### Installation
 1. Download query_result_jira_formatter.py
