@@ -22,7 +22,7 @@ def executeQueryToJiraFormat(qbuffer):
     #Copy column headers to output with Jira column header formatting
     for result in resultsets:
 
-        #Copy query to resulting text, encapsulated by Jira SQL code formatting tags.
+        #Copy query to resulting text, wrapped in Jira SQL code formatting tags.
         resultText = "{code:sql}\n" + result.sql + "\n{code}\n"
         rowCount = result.rowCount
 
